@@ -1,0 +1,45 @@
+.day_div{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.05);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f7f7f7;
+    overflow-y: hidden;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    .date{
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 5px;
+    }
+    .tasks_for_the_day{
+        display: flex;
+        align-items: center;
+        margin-bottom: 2.5px;
+        .priority{
+            width: 10px;
+            height: 5px;
+            border-radius: 2px;
+            // background: red;
+            margin-right: 5px;
+        }
+        p{
+            font-family: 'Raleway', sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+        }
+    }
+    .task_indicator{
+        text-align: right;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        margin-top: 10px;
+        font-weight: 600;
+    }
+}
+.day_div:hover{
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+}

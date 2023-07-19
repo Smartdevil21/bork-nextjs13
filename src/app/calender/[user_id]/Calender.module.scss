@@ -1,0 +1,42 @@
+.calender {
+	width: 75%;
+	padding: 0px 30px;
+	.calender_wrapper {
+		.calender_header {
+			height: 95px;
+			display: flex;
+			align-items: center;
+			h1 {
+				font-family: "Cookie", cursive;
+				color: #004049;
+				font-size: 36px;
+			}
+		}
+        .controllers{
+            display: flex;
+            button{
+                height: fit-content;
+                color: #004049;
+                text-transform: none;
+                font-family: 'Montserrat', sans-serif;
+                // background-color: red;
+                min-height: 40px;
+            }
+        }
+        .calender_container{
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-flow: row;
+            flex-wrap: wrap;
+            // background-color: rgba(0,0,0,0.01);
+            border-radius: 10px;
+            box-shadow: 10px 10px 20px rgba(0,0,0,0.01);
+            // background-color: red;
+            height: calc(100vh - 100px);
+            overflow-y: scroll;
+            padding: 20px;
+        }
+	}
+}

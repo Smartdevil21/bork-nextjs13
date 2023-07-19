@@ -1,0 +1,48 @@
+.habit_stats{
+    width: 1000px;
+    height: 600px;
+    background-color: #f7f7f7;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .habit_stats_wrapper{
+        width: 100%;
+        padding:20px 30px 10px 30px;
+        .habit_stats_heading{
+            padding: 10px 0px 20px 0px;
+            font-family: 'Cookie', cursive;
+            font-size: 28px;
+        }
+        .habit_title{
+            width: 100%;
+            padding: 15px;
+            border-radius: 5px;
+            background: #EDEDED;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 20px;
+        }
+        .habit_stats_numbers{
+            text-align: center;
+            margin-bottom: 30px;
+            p{
+                font-family: 'Cookie', cursive;
+                font-size: 24px; 
+            }
+            h1{
+                font-family: 'Raleway', sans-serif;
+                opacity: 0.8;
+            }
+        }
+    }
+    .bottom_btns{
+        width: 100%;
+        text-align: right;
+        padding: 0px 40px 20px 0px;
+    }
+}

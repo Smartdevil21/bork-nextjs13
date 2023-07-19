@@ -1,0 +1,76 @@
+.sidebar{
+    width: 25%;
+    height: 100%;
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0px;
+        svg{
+            width: 30px;
+            height: 30px;
+        }
+        h3{
+            font-family: 'Montserrat', sans-serif;
+            margin-left: 5px;
+        }
+    }
+    .sidebar_div{
+        // height: calc(90vh - 90px);
+        height: calc(100vh - 90px);
+        padding: 50px 30px;
+        background-color: #004049;
+        border-radius: 0px 100px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        .main_links{
+            a{
+                text-decoration: none;
+            }
+            .sidebar_link_item{
+                display: flex;
+                align-items: center;
+                padding: 10px 0px;
+                cursor: pointer;
+                svg{
+                    margin-right: 30px;
+                    color: #73A39E;
+                    width: 24px;
+                    height: 24px;
+                }
+                p{
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 14px;
+                    color: #73A39E;
+                    font-weight: 600;
+                }
+            }
+            .active{
+                p, svg{
+                    color: #EDEDED;
+                    transition: 0.3s ease-out;
+                }            
+            }
+        }
+        .logout_btn{
+            display: flex;
+            align-items: center;
+            padding: 10px 0px;
+            cursor: pointer;
+            svg{
+                margin-right: 30px;
+                color: #73A39E;
+                width: 24px;
+                height: 24px;
+            }
+            p{
+                font-family: 'Raleway', sans-serif;
+                font-size: 14px;
+                color: #73A39E;
+                font-weight: 600;
+            }
+        }
+    }
+}

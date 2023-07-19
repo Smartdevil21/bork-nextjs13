@@ -1,0 +1,36 @@
+.task_details{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #f0f0f0;
+    padding: 30px 20px 0px 30px;
+    border-radius: 10px;
+    min-width: 600px;
+    h3{
+        font-family: 'Cookie', cursive;
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .date_priority_inputs{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .bottom_btns{
+        width: 100%;
+        text-align: right;
+        padding: 15px 0px;
+        button{
+            text-transform: none;
+        }
+        .save{
+            background-color: #00E0C7;
+            color: #f0f0f0;
+            margin-right: 10px;
+        }
+        .cancel{
+            color: red;
+        }
+    }
+}

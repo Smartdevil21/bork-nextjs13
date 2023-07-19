@@ -1,0 +1,46 @@
+.signup{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    .signup_wrapper{
+        width: 800px;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
+        padding: 30px;
+        border-radius: 20px;
+        .signup_img{
+            img{
+                width: 400px;
+            }
+        }
+        .signup_inputs{
+            width: 100%;
+            h1{
+                font-family: 'Cookie', cursive;
+            }
+            .bottom_btns{
+                width: 100%;
+                text-align: right;
+                button{
+                    background-color: #007DFE;
+                    color: #fff;
+                    text-transform: none;
+                    font-weight: bold;
+                    font-family: 'Cookie', cursive;
+                }
+            }
+            .login_link{
+                font-size: 12px;
+                font-weight: 600;
+                font-family: 'Raleway', sans-serif;
+            }
+        }
+    }
+}

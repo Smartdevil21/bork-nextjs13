@@ -1,0 +1,119 @@
+.add_habit {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 800px;
+	height: 510px;
+	background-color: #f7f7f7;
+	border-radius: 20px;
+	padding: 20px 30px;
+	.add_habit_wrapper {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		overflow-y: scroll;
+		.add_habit_main_wrapper {
+			h2 {
+				font-family: "Cookie", cursive;
+				font-size: 32px;
+				margin-bottom: 10px;
+			}
+			.do_it_at {
+				width: 50%;
+				h3 {
+					font-family: "Montserrat", sans-serif;
+					font-size: 14px;
+					margin-bottom: 10px;
+				}
+				.do_it_at_wrapper {
+					width: 100%;
+					display: flex;
+					justify-content: flex-start;
+					align-items: center;
+					padding: 0px 20px;
+					button {
+						width: 100%;
+					}
+					.time_of_day {
+						margin: 0px 10px 5px 0px;
+						border: 1px solid #73a39e;
+						color: #73a39e;
+					}
+				}
+			}
+			.colors {
+				width: 50%;
+				h3 {
+					font-family: "Montserrat", sans-serif;
+					font-size: 14px;
+					margin-bottom: 10px;
+				}
+				h4 {
+					font-family: "Montserrat", sans-serif;
+					font-size: 14px;
+				}
+				.color {
+					width: 30px;
+					height: 30px;
+					border-radius: 5px;
+					background: #ededed;
+					margin: 0px 10px 10px 0px;
+					cursor: pointer;
+					transition: 0.3s ease-out;
+					box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+				}
+				.active_color {
+					transform: translateY(-5px);
+					box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+				}
+				.color:hover {
+					transform: translateY(-5px);
+					box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+				}
+				.color_input_wrapper {
+                    width: 40px;
+                    height: 30px;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+					.color_input {
+						outline: none;
+						border: none;
+						cursor: pointer;
+						box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+					}
+				}
+			}
+			.days_of_the_week {
+				h3 {
+					font-family: "Montserrat", sans-serif;
+					font-size: 14px;
+					margin-bottom: 10px;
+				}
+				.day {
+					text-transform: none;
+					border: 1px solid #73a39e;
+					color: #73a39e;
+				}
+			}
+		}
+		.bottom_div {
+			width: 100%;
+			text-align: right;
+			.add_btn {
+				color: #00e0c7;
+				margin-right: 10px;
+				border: 1px solid #00e0c7;
+			}
+			.cancel_btn {
+				color: red;
+				// border: 1px solid red;
+			}
+		}
+	}
+}

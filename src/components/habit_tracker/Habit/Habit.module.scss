@@ -1,0 +1,91 @@
+.habit_name {
+	width: 280px;
+	margin-right: 20px;
+	padding-left: 20px;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	p {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+	}
+	.habit_action_menu{
+		opacity: 1;
+		transition: 0.3s ease-out;
+		transform: translateX(0px);
+		height: 16px;
+	}
+	.habit_edit_opts {
+		width: 0px;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		overflow-x: hidden;
+		transition: 0.3s ease-out;
+		.habit_edit_opts_container {
+			width: 70px;
+			// background-color: red;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			svg {
+				cursor: pointer;
+			}
+		}
+	}
+}
+.habit_name:hover {
+	p {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+	.habit_action_menu{
+		transform: translateX(-10px);
+		opacity: 0;
+	}
+	.habit_edit_opts {
+		width: 70px;
+	}
+}
+.habit_circle {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	// background-color: #f0f0f0;
+	cursor: pointer;
+	transition: 0.3s ease-out;
+}
+.unselected_day_indicator {
+	width: 30px;
+	height: 2px;
+	border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	.dash {
+		width: 10px;
+		height: 2px;
+	}
+}
+.done_day {
+	width: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.missed_day{
+		width: 18px;
+		height: 18px;
+	}
+	svg {
+		cursor: pointer;
+		transition: 0.3s ease-out;
+	}
+    svg:hover{
+        transform: translateY(-5px);
+    }
+}
+.habit_circle:hover {
+	transform: translateY(-5px);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+}
